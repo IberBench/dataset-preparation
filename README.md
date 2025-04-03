@@ -5,7 +5,6 @@
 | metadata  |                                                                                                                             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Authors   | Ian Borrego, Jose Gonzalez, Álvaro Romo                                                                                                  |
-| Desing Doc | [link](https://dev.azure.com/symanto/Symanto%20Research/_git/ivace_datasets) |
 
 # 📖 Introduction
 
