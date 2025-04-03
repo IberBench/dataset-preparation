@@ -1,0 +1,30 @@
+{
+    "task":{
+       "workshop":"iberlef",
+       "shared_task":"parmex",
+       "year":2022,
+       "task_type":"paraphrase_detection",
+       "language":"spanish-mexico",
+       "url":[
+          "https://sites.google.com/view/par-mex/home",
+          "https://sites.google.com/view/par-mex/task-data",
+          "https://sites.google.com/view/par-mex/organizers"
+       ]
+    },
+    "dataset": {
+        "train_files":"datasets/par_mex_2022/train",
+        "test_files":"datasets/par_mex_2022/test",
+        "hf_repo_id":"",
+        "hf_subset":""
+    },
+    "normalizer": {
+        "normalizer_fn":"classification",
+        "language_var":"False",
+        "language": "spanish",
+        "input_cols":["text1","text2"],
+        "output_col":"label",
+        "keep_columns": ["text1","text2","label"]
+    },
+    "mapping":{
+    }   
+}

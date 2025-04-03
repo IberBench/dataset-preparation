@@ -1,0 +1,37 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"galcola",
+       "year":2024,
+       "task_type":"linguistic_acceptability",
+       "language":"galician",
+       "url":[
+          "https://huggingface.co/datasets/proxectonos/galcola"
+       ]
+    },
+    "dataset":{
+       "train_files":"",
+       "test_files":"",
+       "hf_repo_id":"proxectonos/galcola",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"hf_repo",
+       "language_var":"False",
+       "input_cols":[
+          "sentence"
+       ],
+       "output_col":"label",
+       "keep_columns":[
+          "text",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "sentence":"text",
+          "label":"label"
+       }
+    }
+}

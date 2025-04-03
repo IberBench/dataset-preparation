@@ -1,0 +1,47 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"teleia",
+       "year":2024,
+       "task_type":"proficiency_evaluation",
+       "language":"spanish",
+       "url":[
+          "https://huggingface.co/datasets/gonzmart/teleia"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/teleia/train",
+       "test_files":"datasets/teleia/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "input_cols":[
+          "question"
+       ],
+       "output_col":"label",
+       "keep_columns":[
+          "question",
+          "candidate_a",
+          "candidate_b",
+          "candidate_c",
+          "candidate_d",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "label":"label"
+       },
+       "label": {
+         "a": "0",
+         "b": "1",
+         "c": "2",
+         "d": "3"
+       }
+    }
+ }

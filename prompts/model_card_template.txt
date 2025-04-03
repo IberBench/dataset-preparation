@@ -1,0 +1,87 @@
+# Dataset Card for {{ dataset_id | default("Dataset ID", true) }}
+
+<!-- Provide a quick summary of what the dataset is/does. -->
+{{ dataset_summary | default("", true) }}
+
+## Dataset Details
+
+### Dataset Description
+
+<!-- Provide a longer summary of what this dataset is and its purpose. -->
+{{ dataset_description | default("", true) }}
+
+This section provides basic information about the dataset, its purpose, and its content. It should be useful for anyone who wants to reference or use the dataset.
+
+- **Created by:** {{ creators | default("[More Information Needed]", true) }}  
+  List (and ideally link to) the people who created the dataset.  
+- **Funded by [optional]:** {{ funded_by | default("[More Information Needed]", true) }}  
+  List (and ideally link to) the funding sources that financially or otherwise supported the creation of this dataset.  
+- **Shared by [optional]:** {{ shared_by | default("[More Information Needed]", true) }}  
+  List (and ideally link to) the people/organization making the dataset available online.  
+- **Languages:** {{ languages | default("[More Information Needed]", true) }}  
+  Specify the languages represented in the dataset, if applicable.  
+- **License:** {{ license | default("[More Information Needed]", true) }}  
+  Name and link to the license governing the use of this dataset.  
+
+### Dataset Sources
+
+<!-- Provide the basic links for accessing the dataset. -->
+
+- **Repository:** {{ repo | default("[More Information Needed]", true) }}  
+  Link to the repository where the dataset can be found.  
+- **Paper [optional]:** {{ paper | default("[More Information Needed]", true) }}  
+  Link to the paper describing the dataset, if available.  
+
+## Dataset Composition
+
+<!-- Provide details on the dataset's composition and content. -->
+
+### Data Fields
+
+<!-- Describe the fields (columns or features) in the dataset. -->
+{{ data_fields | default("[More Information Needed]", true) }}
+
+### Data Splits
+
+<!-- Describe the splits in the dataset (e.g., train/test/validation). -->
+{{ data_splits | default("[More Information Needed]", true) }}
+
+### Data Size
+
+<!-- Provide details about the size of the dataset (e.g., number of rows, file sizes). -->
+{{ data_size | default("[More Information Needed]", true) }}
+
+### Data Collection Process
+
+<!-- Describe how the data was collected, including sources and methodologies. -->
+{{ data_collection_process | default("[More Information Needed]", true) }}
+
+## Uses
+
+### Intended Uses
+
+<!-- Describe the intended uses of the dataset, including specific tasks or research goals. -->
+{{ intended_uses | default("[More Information Needed]", true) }}
+
+### Out-of-Scope Uses
+
+<!-- Describe any potential misuse or out-of-scope use cases for the dataset. -->
+{{ out_of_scope_uses | default("[More Information Needed]", true) }}
+
+## Citation [optional]
+
+**BibTeX:**  
+{{ citation_bibtex | default("[More Information Needed]", true) }}
+
+**APA:**  
+{{ citation_apa | default("[More Information Needed]", true) }}
+
+## Dataset Authors [optional]
+
+<!-- List the authors of the dataset card. -->
+{{ dataset_card_authors | default("[More Information Needed]", true) }}
+
+## Dataset Contact
+
+<!-- Provide contact information for inquiries about the dataset. -->
+{{ dataset_card_contact | default("[More Information Needed]", true) }}

@@ -1,0 +1,44 @@
+{
+    "task":{
+       "workshop":"pan",
+       "shared_task":"author_profiling",
+       "year":2015,
+       "task_type":"age_detection",
+       "language":"spanish",
+       "url":[
+          "https://pan.webis.de/clef15/pan15-web/author-profiling.html"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/pan15_age_es/train",
+       "test_files":"datasets/pan15_age_es/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "language":"spanish",
+       "input_cols":[
+          "text"
+       ],
+       "output_col":"age",
+       "keep_columns":[
+          "text",
+          "label",
+          "language"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "age":"label"
+       },
+       "label":{
+          "25-34": "0",
+          "18-24": "1",
+          "35-49": "2",
+          "50-xx": "3"
+       }
+    }
+ }

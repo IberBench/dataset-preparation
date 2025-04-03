@@ -1,0 +1,35 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"xstorycloze",
+       "year":2024,
+       "task_type":"question_answering",
+       "language":"galician",
+       "url":[
+          "https://huggingface.co/datasets/proxectonos/xstorycloze_gl"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/xstorycloze_gl/train",
+       "test_files":"datasets/xstorycloze_gl/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "input_cols":[
+          "text"
+       ],
+       "output_col": "label",
+       "keep_columns":[
+          "text",
+          "choice1",
+          "choice2",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+    }
+ }

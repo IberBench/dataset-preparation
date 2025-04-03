@@ -1,0 +1,43 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"xnli",
+       "year":2024,
+       "task_type":"textual_entailment",
+       "language":"spanish",
+       "url":[
+          "https://huggingface.co/datasets/AntoineBlanot/xnli-es"
+       ]
+    },
+    "dataset":{
+       "train_files":"",
+       "test_files":"",
+       "hf_repo_id":"AntoineBlanot/xnli-es",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"hf_repo",
+       "language_var":"False",
+       "input_cols":[
+          "premise"
+       ],
+       "output_col":"label_name",
+       "keep_columns":[
+          "premise",
+          "hypothesis",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "premise":"premise",
+          "hypothesis": "hypothesis",
+          "label_name":"label"
+       },
+       "label": {
+         "not-entailment": "0",
+         "entailment": "1"
+       }
+    }
+ }

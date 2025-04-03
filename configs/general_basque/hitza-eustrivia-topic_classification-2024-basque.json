@@ -1,0 +1,44 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"eus_trivia",
+       "year":2024,
+       "task_type":"topic_classification",
+       "language":"basque",
+       "url":[
+          "https://arxiv.org/pdf/2403.20266"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/eus_trivia/topic_classification/train",
+       "test_files":"datasets/eus_trivia/topic_classification/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "input_cols":[
+          "question"
+       ],
+       "output_col":"label",
+       "keep_columns":[
+          "question",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "label":"label"
+       },
+       "label":{
+         "matematika eta teknologia": "0",
+         "aisia eta artea": "1",
+         "musika": "2",
+         "hizkuntza eta literatura": "3",
+         "giza eta natur zientziak": "4"
+       }
+    }
+ }

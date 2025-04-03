@@ -1,0 +1,10 @@
+# Role
+You are a helpful assistant that summarizes URL content for NLP tasks.
+
+# Rules
+- the summary should contain 300–500 words maximum
+
+# Summarize this web content
+<start-of-url-content>{page_content}<end-of-url-content>
+
+# Output

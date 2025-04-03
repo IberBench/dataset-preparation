@@ -1,0 +1,45 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"xnli",
+       "year":2024,
+       "task_type":"textual_entailment",
+       "language":"galician",
+       "url":[
+          "https://huggingface.co/datasets/proxectonos/xnli_gl"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/xnli_gl/train",
+       "test_files":"datasets/xnli_gl/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "input_cols":[
+          "sentence1",
+          "sentence2"
+       ],
+       "output_col":"gold_label",
+       "keep_columns":[
+          "premise",
+          "hypothesis",
+          "language",
+          "label"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "sentence1":"premise",
+          "sentence2": "hypothesis",
+          "gold_label":"label"
+       },
+       "label": {
+         "contradiction": "0",
+         "neutral": "1",
+         "entailment": "2"
+       }
+    }
+ }

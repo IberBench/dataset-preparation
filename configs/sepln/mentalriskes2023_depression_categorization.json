@@ -1,0 +1,46 @@
+{
+    "task":{
+       "workshop":"iberlef",
+       "shared_task":"mentalriskes",
+       "year":2023,
+       "task_type":"depression_categorization",
+       "language":"spanish",
+       "url":[
+          "https://sites.google.com/view/mentalriskes",
+          "https://sites.google.com/view/mentalriskes/dataset",
+          "https://sites.google.com/view/mentalriskes/organizers"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/mentalriskes_2023/depression_detection/multiclass/train",
+       "test_files":"datasets/mentalriskes_2023/depression_detection/multiclass/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "language":"spanish",
+       "input_cols":[
+          "text"
+       ],
+       "output_col":"label",
+       "keep_columns":[
+          "text",
+          "label",
+          "language"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "label":"label"
+       },
+       "label":{
+          "not depressive":"0",
+          "depressive and in favour of depression":"1",
+          "depressive and against depression":"2",
+          "depressive and neither for nor against depression":"3"
+       }
+    }
+ }

@@ -1,0 +1,14 @@
+transformers
+typer
+datasets
+unidecode
+ftfy
+tiktoken
+symanto-gpt-client
+beautifulsoup4
+openai
+pandas
+langchain_community
+langchain_openai
+unstructured
+openpyxl

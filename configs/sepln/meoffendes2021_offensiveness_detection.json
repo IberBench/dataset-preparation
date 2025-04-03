@@ -1,0 +1,44 @@
+{
+   "task":{
+      "workshop":"iberlef",
+      "shared_task":"meoffendes",
+      "year":2021,
+      "task_type":"offensiveness_detection",
+      "language":"spanish",
+      "url":[
+         "https://competitions.codalab.org/competitions/28679"
+      ]
+   },
+   "dataset":{
+      "train_files":"datasets/MeOffendES_2021/offensive_language/train",
+      "test_files":"datasets/MeOffendES_2021/offensive_language/test",
+      "hf_repo_id":"",
+      "hf_subset":""
+   },
+   "normalizer":{
+      "normalizer_fn":"classification",
+      "language_var":"False",
+      "language":"spanish",
+      "input_cols":[
+         "comment"
+      ],
+      "output_col":"label",
+      "keep_columns":[
+         "text",
+         "label",
+         "language"
+      ]
+   },
+   "mapping":{
+      "desired_column_mapping":{
+         "comment":"text",
+         "label":"label"
+      },
+      "label":{
+         "not offensive":"0",
+         "not offensive, but with expletive language":"1",
+         "offensive towards a target group":"2",
+         "offensive towards a person":"3"
+      }
+   }
+}

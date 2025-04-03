@@ -1,0 +1,37 @@
+{
+    "task":{
+       "workshop":"general",
+       "shared_task":"cabreu",
+       "year":2024,
+       "task_type":"text_summarization",
+       "language":"catalan",
+       "url":[
+          "https://huggingface.co/datasets/projecte-aina/caBreu"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/cabreu/train",
+       "test_files":"datasets/cabreu/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "input_cols":[
+          "content"
+       ],
+       "output_col":"summary",
+       "keep_columns":[
+          "text",
+          "language",
+          "summary"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "content":"text",
+          "summary":"summary"
+       }
+    }
+}

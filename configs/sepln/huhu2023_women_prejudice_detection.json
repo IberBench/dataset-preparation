@@ -1,0 +1,43 @@
+{
+    "task":{
+       "workshop":"iberlef",
+       "shared_task":"huhu",
+       "year":2023,
+       "task_type":"women_prejudice_detection",
+       "language":"spanish",
+       "url":[
+          "https://sites.google.com/view/huhuatiberlef23/huhu",
+          "https://sites.google.com/view/huhuatiberlef23/organizers"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/huhu_2023/women_prejudice_detection/train",
+       "test_files":"datasets/huhu_2023/women_prejudice_detection/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "language":"spanish",
+       "input_cols":[
+          "text"
+       ],
+       "output_col":"label",
+       "keep_columns":[
+          "text",
+          "label",
+          "language"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "label":"label"
+       },
+       "label":{
+          "not women prejudice":"0",
+          "women prejudice":"1"
+       }
+    }
+ }

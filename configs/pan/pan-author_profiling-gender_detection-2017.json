@@ -1,0 +1,42 @@
+{
+    "task":{
+       "workshop":"pan",
+       "shared_task":"author_profiling",
+       "year":2017,
+       "task_type":"gender_detection",
+       "language":"spanish",
+       "url":[
+          "https://pan.webis.de/clef17/pan17-web/author-profiling.html"
+       ]
+    },
+    "dataset":{
+       "train_files":"datasets/pan17_gender_es/train",
+       "test_files":"datasets/pan17_gender_es/test",
+       "hf_repo_id":"",
+       "hf_subset":""
+    },
+    "normalizer":{
+       "normalizer_fn":"classification",
+       "language_var":"False",
+       "language":"spanish",
+       "input_cols":[
+          "text"
+       ],
+       "output_col":"gender",
+       "keep_columns":[
+          "text",
+          "label",
+          "language"
+       ]
+    },
+    "mapping":{
+       "desired_column_mapping":{
+          "text":"text",
+          "gender":"label"
+       },
+       "label":{
+          "male": "0",
+          "female": "1"
+       }
+    }
+ }
