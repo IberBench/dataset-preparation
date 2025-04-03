@@ -131,7 +131,7 @@ The `create_model_card` function generates a model card using GPT and updates th
 To contribute to this project, follow these steps:
 
 Clone the repository:
-```git clone https://github.com/your-username/ivace_datasets.git```
+```https://github.com/IberBench/dataset-preparation.git```
 
 Install the required dependencies:
 ```pip install -r requirements.txt```
@@ -141,7 +141,3 @@ Run the tests:
 
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-```
-
-This README provides a comprehensive overview of the application, including usage instructions, pipeline steps, and development guidelines. Adjust the paths and repository details as needed.
-```
