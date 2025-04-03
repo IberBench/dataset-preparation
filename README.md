@@ -4,7 +4,7 @@
 
 | metadata  |                                                                                                                             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Authors   | Ian Borrego, Jose Gonzalez, Álvaro Romo                                                                                                  |
+| Authors   | Ian Borrego, Álvaro Romo, Jose Gonzalez                                                                                                   |
 
 # 📖 Introduction
 
