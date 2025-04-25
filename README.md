@@ -138,6 +138,3 @@ Install the required dependencies:
 
 Run the tests:
 ```python -m unittest discover -s tests```
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
